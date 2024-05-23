@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Trading</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome! Let's make money today.</h1>
+        <p>Account Balance: <span id="balance">Loading...</span></p>
+        <form id="trade-form">
+            <input type="text" name="api_token" placeholder="Enter Deriv API">
+            <br>
+            <input type="number" name="initial_stake" placeholder="Initial Stake">
+            <br>
+            <input type="number" name="profit_target" placeholder="Profit Target">
+            <br>
+            <input type="number" name="stop_loss" placeholder="Stop Loss">
+            <br>
+            <button type="submit" id="start-btn">Start Trading</button>
+            <button type="button" id="stop-btn">Stop Trading</button>
+        </form>
+        <p id="notification"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
